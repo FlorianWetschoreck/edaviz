@@ -47,6 +47,12 @@ eda.overview(df)
 You will be able to discover most of the library functions via the `eda.overview(df)` widget.
 Later, we will provide a full overview of all functions here.
 
+## 3 most important functions:
+- `eda.overview(df)` shows an overview widget of a given dataframe. This is the main entry point of the edaviz library
+- `eda.plot(df, column_1, column_2)` shows a suitable bivariate plot of the two columns, e.g. `eda.plot(df, "Survived", "Age")`. The big advantage is that you do not have to specify the chart type because a best practice visualization is inferred based on the column data types
+- `eda.patterns(df)` answers the question: _"between which columns exist predictive patterns?"_
+
+
 ## Advanced API
 In addition, you might want to try the following functions:
 - `eda.preview(df)` creates an interactive preview of the dataframe
