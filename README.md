@@ -34,10 +34,8 @@ jupyter lab build
 # Usage
 
 ```
-import pandas as pd
-df = pd.read_csv("titanic.csv")  # read any CSV file
-
 import edaviz as eda
+df = eda.get_titanic_df()  # sample pandas dataframe
 eda.overview(df)
 ```
 
