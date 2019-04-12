@@ -24,7 +24,7 @@ jupyter nbextension enable --py qgrid
 ### if you use Jupyter Lab
 
 > Important: Jupyter Lab extensions require that you have nodejs installed on your computer.
-<a href="https://jupyterlab.readthedocs.io/en/stable/user/extensions.html#installing-extensions" target="_blank">Official install guide for Jupyter Lab Extensions</a>
+<a href="https://jupyterlab.readthedocs.io/en/stable/user/extensions.html" target="_blank">Official install guide for Jupyter Lab Extensions</a>
 
 
 ```
