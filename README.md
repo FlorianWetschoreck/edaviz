@@ -1,6 +1,8 @@
 # edaviz
 edaviz - Python library for Exploratory Data Analysis and Visualization in Jupyter Notebook or Jupyter Lab
 
+> Beta Version: edaviz is currently in active beta development and we update the library weekly. If you find an error, please report it to us.
+
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [API](#API)
@@ -10,16 +12,20 @@ edaviz - Python library for Exploratory Data Analysis and Visualization in Jupyt
 Currently, we are in private beta testing mode. You will receive the initial `pip install` command directly from us when you have been chosen for early access.
 
 ## After the pip install:
-In addition, some of the widgets need to be activated in Jupyter Lab or Jupyter Notebook depending on your setup:
+In addition, you need to activate extensions for Jupyter Lab or Jupyter Notebook:
 
-### with Jupyter Notebook
+### if you use Jupyter Notebook
 
 ```
 jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable --py qgrid
 ```
 
-### with Jupyter Lab (requires npm)
+### if you use Jupyter Lab
+
+> Important: Jupyter Lab extensions require that you have nodejs installed on your computer.
+<a href="https://jupyterlab.readthedocs.io/en/stable/user/extensions.html#installing-extensions" target="_blank">Official install guide for Jupyter Lab Extensions</a>
+
 
 ```
 jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
@@ -33,12 +39,13 @@ jupyter lab build
 
 # Usage
 
+Execute the following code in a Jupyter cell:
 ```
 import edaviz as eda
 df = eda.get_titanic_df()  # sample pandas dataframe
 eda.overview(df)
 ```
-
+> Info: currently, edaviz only works within Jupyter Notebook or Jupyter Lab. You cannot use it on other platforms, e.g. via the command line or in PyCharm etc
 
 # API
 
