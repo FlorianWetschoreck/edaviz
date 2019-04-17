@@ -61,7 +61,7 @@ Later, we will provide a full overview of all functions here.
 ## Advanced API
 In addition, you might want to try the following functions:
 - `eda.preview(df)` creates an interactive preview of the dataframe
-- `eda.compare_subset(df, df_subset)` shows a comparison overview similar to the `eda.crossfilter(df)`. The only difference is that you can specify the filtered subset via `df_subset`, e.g. via `df_subset = df[df.Survived >= 1)]`
+- `eda.compare_subset(df, df_subset)` shows a comparison overview similar to the `eda.crossfilter(df)`. The only difference is that you can specify the filtered subset via `df_subset`. For example you can use `eda.compare_subset(df, df[df.Survived >= 1])`
 
 
 
