@@ -39,7 +39,12 @@ jupyter lab build
 
 # Usage
 
-Execute the following code in a Jupyter cell:
+First, start your Jupyter Notebook from the terminal:
+```
+jupyter notebook
+```
+
+Then, execute the following code in a Jupyter cell:
 ```
 import edaviz as eda
 df = eda.get_titanic_df()  # sample pandas dataframe
